@@ -1,0 +1,113 @@
+/* Header */
+
+.nav-bar .nav-items:first-child {
+    color: #808e9b;
+}
+
+.nav-bar .nav-items:nth-child(3) {
+    color: #EB6208;
+}
+
+.fee-picture {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+
+    -webkit-animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
+    animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.fee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fee-description {
+    width: 70%;
+    padding: 60px;
+}
+
+.title {
+    font-size: 2em;
+    opacity: 0.6;
+
+    padding: 10px 0 10px 0;
+}
+
+.description {
+    font-size: 1rem;
+    padding-bottom: 15px;
+    border-bottom: #EB6208 2px solid;
+}
+
+.subtitle {
+    opacity: 0.6;
+    font-size: 1.5em;
+
+    padding: 20px 0 10px 0;
+}
+
+.categorie {
+    font-weight: bold;
+    opacity: 0.6;
+
+    padding: 15px 0 15px 0;
+}
+
+.fee-computation {
+    padding-bottom: 15px;
+    border-bottom: #EB6208 4px dotted;
+}
+
+.fee-computation ul, .fee-fixed ul {
+    margin: 0;
+}
+
+.fee-fixed {
+    padding-bottom: 15px;
+    border-bottom: #EB6208 2px solid;
+}
+
+.fee-prevision {
+    padding-bottom: 15px;
+    border-bottom: #EB6208 2px solid;
+}
+
+.contact-law {
+    display: flex;
+    /* justify-content: center; */
+
+    line-height: 20px;
+
+    padding: 15px 0 15px 0;
+}
+
+.contact-law p {
+    /* text-align: center; */
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////// Media Queries ////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 1024px) {
+    .fee-description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fee-description {
+        padding: 20px;
+    }
+}

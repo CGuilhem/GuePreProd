@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gué - Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <div class="main-header" id="param-header">
+          <div class="brand-logo" id="logo">
+            <a href="index.html">
+              <img src="Images/brand-logo.png" loading ="lazy" alt="Logo du cabinet d'avocat de Maître Gué">   
+            </a>
+          </div>
+          <div class="navigation">
+            <div class="scrolled-logo">
+              <a href="index.html"><img src="Images/logo_G.png" loading ="lazy" alt="Logo miniature du cabinet d'avocat de Maître Gué"></a>
+            </div>
+            <nav>
+              <ul class="nav-bar" id="list">
+                <li class="nav-items"><a href="index.html">Accueil</a></li>
+                <li class="nav-items"><a href="cabinet.html">Cabinet</a></li>
+                <li class="nav-items"><a href="honoraires.html">Honoraires</a></li>
+                <li class="nav-items"><a href="actualites.html">Actualités</a></li>
+                <li class="nav-items"><a href="contact.html">Contact</a></li>
+              </ul>
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            </nav>
+          </div>
+        </div>          
+      </header>
+
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.0441149825074!2d-0.38770408370361575!3d49.199722684565415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42d47e8341b9%3A0xfb32965e553cc6d8!2s12%20Av.%20du%20Mar%C3%A9chal%20Montgomery%2C%2014000%20Caen!5e0!3m2!1sfr!2sfr!4v1639382635377!5m2!1sfr!2sfr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" class="mobile-maps"></iframe>
+      </div>
+
+      <div class="form-container">
+        <div class="container-picture">
+          <img src="Images/photo_JB.png" loading ="lazy" alt="Logo du cabinet d'avocat de Maître Gué" class="form-picture">
+        </div>
+        <div class="form-size">
+          <div class="form">
+            <h1>Formulaire de contact</h1>
+            <form id="contact" name="contact" action="https://formspree.io/f/xknygelo" method="POST" >
+              <input type="text" name="nom" id="nom" placeholder="Nom *" class="champs" required>
+              <input type="text" name="telephone" id="telephone" placeholder="Numéro de téléphone" class="champs">
+              <input type="email" name="_replyto" id="mail" placeholder="Adresse e-mail *" class="champs" required>
+              <input type="text" name="sujet" id="sujet" placeholder="Sujet *" class="champs" required>
+              <textarea name="message" id="message" placeholder="Message *" class="champs" required></textarea>
+              <input type="submit" name="submit" id="submit" value="Envoi">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-picture">
+        <img src="Images/bas_page_contact.png" loading ="lazy" alt="Les différents moyens de contact, ainsi que l'adresse et les horaires" class="more-information">
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-container-logo">
+            <img src="Images/footer_logo.png" loading ="lazy" alt="Logo simplifié du cabinet d'avocat de Maître Gué" class="footer-logo">
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-description">Votre avocat mettra tout en œuvre pour vous accompagner, vous conseiller et vous défendre, avec rigueur et efficacité, du premier rendez-vous jusqu'à l'obtention d'une décision de justice ou la signature d'un protocole transactionnel</div>
+          <div class="footer-contact">
+            <ul>
+              <li>Contact</li>
+              <li><img src="Images/picto_adress.png" loading ="lazy" alt="Pictogramme d'une maison" class="adress-logo">         12 avenue du Maréchal Montgomery - 14000 CAEN</li>
+              <li><img src="Images/picto_phone.png" loading ="lazy" alt="Pictogramme d'un téléphone" class="number-logo">         06 32 35 95 55</li>
+              <li><a href="https://fr.linkedin.com/in/jean-baptiste-gu%C3%A9-73987166" target="_blank"><img src="Images/picto_LinkedIn.png" loading ="lazy" alt="Pictogramme de LinkedIn" class="linkedin-logo">          LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div class="end">
+        <div>© 2022 Cabinet Gué, Avocat au barreau de Caen - <a href="https://www.linkedin.com/in/guilhem-calonne-137820226/" target="_blank"><strong>Création par Guilhem CALONNE</strong></a><a href="https://www.linkedin.com/in/marie-pichon-91979960/" target="_blank"> <strong> et Marie PICHON</strong></a> - <a href="mentions.html"><strong>Mentions légales</strong></a></div>
+      </div>
+    </div>
+
+    <script src="JavaScript/mobileHeader.js"></script>
+    <script src="JavaScript/scroll.js"></script>
+    <script src="JavaScript/mobileToggle.js"></script>
+  </body>
+</html>

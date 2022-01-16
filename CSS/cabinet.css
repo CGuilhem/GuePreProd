@@ -1,0 +1,151 @@
+*/* Header */
+
+.nav-bar .nav-items:first-child {
+    color: #808e9b;
+}
+.nav-bar .nav-items:nth-child(2) {
+    color: #EB6208;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+
+    -webkit-animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
+    animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
+}
+
+.profile-description {
+    width: 70%;
+    /* max-width: 45ch; */
+    padding: 60px;
+
+    text-align: justify;
+}
+
+.title {
+    font-size: 2em;
+    opacity: 0.6;
+
+    padding: 10px 0 20px 0;
+}
+
+.description {
+    font-size: 1rem;
+    padding-bottom: 30px;
+    border-bottom: #EB6208 4px dotted;
+}
+
+.assistance {
+    font-size: 1rem;
+    font-style: italic;
+
+    padding: 20px 0 20px 0;
+    border-bottom: #EB6208 2px solid;
+}
+
+.list {
+    margin: 0;
+}
+
+.list li {
+    font-size: 1rem;
+    padding : 5px 0 5px 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    background-color: #F2F3F4;
+}
+
+.contact-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    background-image: url("../Images/cabinet-picture-2.png");
+    background-size: contain;
+}
+
+.contact-text {
+    padding: 40px 20px 20px 20px;
+}
+
+.contact-mail {
+    padding-bottom: 30px;
+}
+
+.contact-link {
+    padding: 20px;
+    background-color: #EB6208;
+    border: #EB6208 2px solid;
+    border-radius: 4px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: cornsilk;
+
+    transition: all 0.75s ease;
+}
+
+.contact-link:hover:hover{
+    background-color: #eb6308; 
+    opacity: 0.8;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////// Media Queries ////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 1024px) {
+    .profile-description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-description {
+        padding: 20px;
+    }
+
+    .contact-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .contact-picture {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .contact-text {
+        padding: 10px;
+    }
+    
+    .contact-mail {
+        padding-bottom: 30px;
+    }
+    
+    .contact-link {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

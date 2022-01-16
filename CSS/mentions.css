@@ -1,0 +1,40 @@
+*/* Header */
+
+.nav-bar .nav-items:first-child {
+    color: #808e9b;
+}
+
+.mentions-description {
+    padding: 60px;
+}
+
+h2 {
+    font-size: 2em;
+    opacity: 0.6;
+
+    border-bottom: #EB6208 4px dotted;
+
+    margin: 15px 0 15px 0;
+    padding: 10px 0 20px 0;
+}
+
+h3 {
+    opacity: 0.6;
+}
+
+p {
+    padding: 5px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////// Media Queries ////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 1024px) {
+    .mentions-description {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mentions-description {
+        padding: 20px;
+    }
+}
